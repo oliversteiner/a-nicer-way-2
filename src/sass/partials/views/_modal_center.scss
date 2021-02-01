@@ -1,0 +1,28 @@
+#modal-center .modal-dialog {
+  padding: 0;
+  vertical-align: middle;
+  pointer-events: none;
+  top: 50vh;
+  width: 300px;
+
+}
+
+#modal-center .modal-content {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  height: inherit;
+
+  /* To center horizontally */
+  pointer-events: all;
+
+  // center text
+  text-align: center;
+
+}
+
+#modal-center .list-group{
+  margin: 0;
+}

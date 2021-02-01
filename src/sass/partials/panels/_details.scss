@@ -1,0 +1,34 @@
+#nicer-panel-details {
+  top: 120px;
+  left: 50px;
+
+  width: 280px;
+}
+
+
+
+#detail-slide-id{
+
+}
+#detail-slide-name{
+
+}
+#detail-slide-number{
+  position: absolute;
+  top: -8px;
+  font-size: 30px;
+  color: $color-panel-brighter;
+  width: 70px;
+  text-align: right;
+}
+
+
+
+#detail-slide-name h2 {
+  position: relative;
+  font-size: 1.5em;
+  color: #85b6f3;
+  top: -23px;
+  left: 3px;
+}
+

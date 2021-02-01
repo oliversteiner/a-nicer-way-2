@@ -1,0 +1,147 @@
+// Design
+@import 'partials/design/colors';
+@import 'partials/design/fonts';
+@import 'partials/design/button';
+@import 'partials/design/form';
+
+
+// Utilitis
+@import 'partials/utilities/messages';
+@import "partials/utilities/effects";
+@import "partials/utilities/hype";
+@import "partials/utilities/timer";
+
+// Views
+@import 'partials/views/console';
+@import 'partials/views/smartphone_sim';
+@import 'partials/views/status_display';
+@import 'partials/views/timeway';
+@import 'partials/views/footer';
+@import "partials/views/help";
+@import "partials/views/remote_display";
+@import "partials/views/modal_center";
+@import "partials/views/character";
+
+// Editor
+@import "editor/design/_colors.scss";
+@import "editor/buttons";
+@import "editor/editor";
+@import "editor/pictos";
+@import "editor/views/slides";
+@import "editor/views/devices";
+@import "editor/views/side_toolbar";
+@import "editor/views/top_toolbar";
+
+// Panels
+@import "partials/panels/panel";
+@import "partials/panels/character";
+@import "partials/panels/navigation";
+@import "partials/panels/details";
+
+
+
+
+// Well
+// -----------------------------
+
+.well-nicer {
+}
+
+.well-transparent {
+  background: none;
+}
+
+.well-nicer-light {
+  padding: 0;
+  margin: 0;
+}
+
+// Navigation
+// -----------------------------
+
+.navbar-nicer {
+  background-color: $color-background;;
+}
+
+.navbar-nicer:hover .navbar-nav > li > a {
+  color: $color-nav-text;
+}
+
+.navbar-nicer:hover .navbar-nav > li > a:hover {
+  color: $color-text-link-hover
+}
+
+.navbar-nicer:hover .navbar-nav > li > a:active {
+  color: $color-text-link-active
+}
+
+.navbar-nicer .navbar-nav > li > a {
+  color: $color-background;
+
+}
+
+// Pfeilnavigation im Menu
+// -----------------------------
+
+.pager {
+  float: right;
+  position: relative;
+  padding: 12px 0 0;
+  margin: 0 50px 0 0;
+}
+
+.pager li {
+  padding: 0;
+  margin: 0 0 0 10px;
+}
+
+.pager li > a {
+  font-size: 1em;
+  padding: 1px 20px;
+  margin: 0;
+  border-radius: 5px;
+  background-color: $color-background;
+  color: $color-text-link;
+  cursor: pointer;
+}
+
+// Editor
+// -----------------------------
+body.editor-active main,
+body.editor-active header,
+body.editor-active nav,
+body.editor-active footer {
+  margin-left: 40px;
+}
+
+// Scrollbar
+// -----------------------------
+
+::-webkit-scrollbar {
+  width: 12px; /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#data-display-content {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+
+}
+
+
+
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+  margin-left: 60px;
+}

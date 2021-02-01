@@ -1,0 +1,458 @@
+{
+  "data": [
+    {
+      "_id": "config",
+      "title": "Konfiguration",
+      "notiz": "Eine einfache Notiz",
+      "profilePic": "assets/img/kunden/eagle.jpg",
+      "type": "Configuration"
+    },
+    {
+      "_id": "TimeWayPoint-1",
+      "sequence": 1,
+      "date": "",
+      "time": "",
+      "place": "",
+      "feeling": "Gut",
+      "message": "",
+      "notice": "",
+      "image": "schmuck-busstop",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "home",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-2",
+      "sequence": 2,
+      "date": "",
+      "time": "",
+      "place": "Kevin's Haus",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "haus-kevins-haus",
+      "imageForeground": "schmuck/schmuck-busstop.png",
+      "imageBackground": "haus/haus-stadtbild.png",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "kalender-m-du-schule",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      },
+      "with": "1000px",
+      "slide": [
+        {
+          "top": "100",
+          "left": "100",
+          "with": "100",
+          "height": "100",
+          "tag": "h1",
+          "class": "",
+          "text": "Titel"
+        },
+        {
+          "top": "200",
+          "left": "100",
+          "with": "100",
+          "height": "100",
+          "tag": "h2",
+          "class": "",
+          "text": "Untertitel"
+        }
+      ]
+    },
+    {
+      "_id": "TimeWayPoint-3",
+      "sequence": 3,
+      "date": "",
+      "time": "",
+      "place": "Kevin's Schlafzimmer",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "zimmer-kevins-schlafzimmer",
+      "imageForeground": "schmuck/schmuck-strassenlaterne.png",
+      "imageBackground": "haus/haus-stadtbild.png",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "kalender",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-4",
+      "sequence": 4,
+      "date": "",
+      "time": "",
+      "place": "in der Stadt",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "haus-stadtbild-1",
+      "figur": "bus",
+      "type": "TimeWayPoint",
+      "width": "1000",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "kalender-m-projekt",
+          "optionalTransition": "",
+          "optionalDuration": 0
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-5",
+      "sequence": 5,
+      "date": "",
+      "time": "",
+      "place": "in der Stadt",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "haus-stadtbild-2",
+      "figur": "bus",
+      "type": "TimeWayPoint",
+      "width": "1000",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "home",
+          "optionalTransition": "",
+          "optionalDuration": 0
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-6",
+      "sequence": 6,
+      "date": "",
+      "time": "",
+      "place": "in der Stadt",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "haus-stadtbild-3",
+      "figur": "bus",
+      "type": "TimeWayPoint",
+      "width": "1000",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "home",
+          "optionalTransition": "",
+          "optionalDuration": 0
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-7",
+      "sequence": 7,
+      "date": "",
+      "time": "",
+      "place": "Bushaltestelle",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "haus-bushaltestelle",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "music-m-unterricht-20",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-8",
+      "sequence": 8,
+      "date": "",
+      "time": "",
+      "place": "Busbahnhof",
+      "feeling": "Gut",
+      "message": "",
+      "notice": "",
+      "image": "schmuck-busstop",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "unterricht-details",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-9",
+      "sequence": 9,
+      "date": "",
+      "time": "",
+      "place": "Schulhaus",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "haus-schulhaus",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "kalender-m-unterricht-jetzt",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-10",
+      "sequence": 10,
+      "date": "",
+      "time": "",
+      "place": "Schulhaus - im Treppenhaus",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "haus-treppe",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "noten",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-11",
+      "sequence": 11,
+      "date": "",
+      "time": "",
+      "place": "Schulzimmer",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "zimmer-schulzimmer",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "unterricht-plus",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-12",
+      "sequence": 12,
+      "date": "",
+      "time": "",
+      "place": "Resto",
+      "feeling": "Gut",
+      "message": "Nachricht 1",
+      "notice": "",
+      "image": "zimmer-mensa",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "resto",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-13",
+      "sequence": 13,
+      "date": "",
+      "time": "",
+      "place": "Treppenhaus",
+      "feeling": "",
+      "message": "",
+      "notice": "",
+      "image": "haus-treppe",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "chat-m-zimmeraenderung",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-14",
+      "sequence": 14,
+      "date": "",
+      "time": "",
+      "place": "Gruppenarbeit",
+      "feeling": "",
+      "message": "",
+      "notice": "",
+      "image": "zimmer-gruppenarbeit",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "projekte-liste",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-15",
+      "sequence": 15,
+      "date": "",
+      "time": "",
+      "place": "in der Stadt",
+      "feeling": "",
+      "message": "",
+      "notice": "",
+      "image": "haus-kornhaus",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "projekte",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    },
+    {
+      "_id": "TimeWayPoint-16",
+      "sequence": 16,
+      "date": "",
+      "time": "",
+      "place": "Am Bärenplatz",
+      "feeling": "",
+      "message": "",
+      "notice": "",
+      "image": "schmuck-baerenplatz",
+      "type": "TimeWayPoint",
+      "hype": {
+        "command": "",
+        "scene": {
+          "sceneName": "home",
+          "optionalTransition": "Crossfade",
+          "optionalDuration": 0.5
+        },
+        "timeline": {
+          "timelineName": "",
+          "direction": "",
+          "timeInSeconds": "",
+          "command": ""
+        }
+      }
+    }
+  ]
+}

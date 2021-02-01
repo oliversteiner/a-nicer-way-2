@@ -1,0 +1,285 @@
+@import "../design/colors";
+@import "../design/fonts";
+
+$color-smartphone: rgb(0, 0, 0);
+$color-smartphone-border: rgb(45, 45, 45);
+$color-smartphone-border-bright: rgb(133, 133, 133);
+$color-smartphone-screen: rgb(195, 209, 255);
+$color-smartphone-homebutton: rgb(15, 15, 15);
+$color-smartphone-homebutton-bright: rgb(67, 67, 67);
+$color-smartphone-pictos-hidden: rgb(15, 16, 51);
+$color-smartphone-pictos-bright: rgb(58, 58, 116);
+$color-smartphone-pictos-brighter: rgb(62, 107, 169);
+$color-smartphone-pictos-active: rgb(1, 1, 1);
+$color-smartphone-screen: rgb(63, 64, 130);
+
+#smartphone-sim-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#smartphone-sim-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+#smartphone-frame {
+  position: absolute;
+
+  top: 200px;
+  left: 800px;
+
+  display: block;
+  height: 700px;
+  width: 350px;
+
+  background-color: black;
+  border-radius: 20px;
+
+
+  // Weisses Schimmern
+
+
+  box-shadow:  0 13px 50px 7px rgba(255,255 ,255, 0.8);
+}
+
+#smartphone-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 20% 5%;
+}
+
+#smartphone-screen {
+  border: 1px solid black;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 2%;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  //  background-color: $color-smartphone-screen;
+  background-color: black;
+
+}
+
+// Homebutton
+
+#smartphone-home-button {
+  position: relative;
+  background-color: $color-smartphone-homebutton;
+  width: 15%;
+  height: 7.5%;
+  bottom: 9%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  border: 1px solid $color-smartphone-border;
+}
+
+#smartphone-home-button:hover {
+  border: 1px solid $color-smartphone-border-bright;
+  cursor: pointer;
+
+}
+
+#smartphone-home-button:active {
+  border: 1px solid $color-smartphone-border-bright;
+  background-color: $color-smartphone-homebutton-bright;
+  cursor: pointer;
+
+}
+
+// head
+
+#smartphone-head {
+  position: absolute;
+  width: 90%;
+  height: 12%;
+  padding: 2%;
+  color: #000;
+  font-size: 20px;
+  top: 4px;
+}
+
+#smartphone-head:hover {
+  color: $color-smartphone-pictos-bright;
+}
+
+#smartphone-head:hover a {
+  color: $color-smartphone-pictos-bright;
+}
+
+#smartphone-content {
+  position: absolute;
+}
+
+// toolbar
+
+#smartphone-toolbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  a {
+    text-decoration: none;
+    color: $color-smartphone-pictos-hidden;
+  }
+
+  a:hover {
+    color: $color-smartphone-pictos-brighter;
+  }
+
+}
+
+// Toolbar Items
+.smartphone-toolbar-item {
+  display: block;
+  text-align: center;
+
+}
+
+// Resize
+#smartphone-toolbar-resize {
+  margin-right: auto
+}
+
+// SOLO
+#smartphone-toolbar-solo {
+
+}
+
+// CLOSE
+#smartphone-toolbar-close {
+  float: right;
+  padding-left: 5px;
+}
+
+// CONSOLE
+// -------------------------------------------------
+
+#smartphone-console {
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $color-console-background;
+  color: $color-message;
+}
+
+#smartphone-console-main {
+  padding: 10px;
+
+}
+
+#smartphone-console {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 0.7em;
+
+  .message,
+  .message-default,
+  .message-error,
+  .message-warning,
+  .message-ok {
+
+    padding-bottom: 2px;
+  }
+}
+
+#smartphone-console-toolbar {
+  border-bottom: 1px solid $color-console-background-bright;
+  background-color: $color-console-background;
+  padding: 5px 10px 10px 10px;
+
+}
+
+.smartphone-console-toolbar-item {
+  float: right;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.smartphone-console-status {
+  float: none;
+
+}
+
+#smartphone-console a {
+  cursor: pointer;
+}
+
+.ping-badge {
+
+  background-color: $color-console-background-bright;
+  color: $color-message-ok;
+  padding: 2px 5px;
+  margin-left: 5px;
+  border-radius: 15px;
+}
+
+.ping-pulse {
+
+  -webkit-animation: pulsate-ring 500ms ease-out;
+}
+
+.prompt-pulse {
+
+  -webkit-animation: pulsate 2s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+
+// Solo
+// -------------------------------------------------
+
+
+
+#smartphone-sim-content.solo-active {
+  z-index: 1000;
+
+  #smartphone-frame {
+    background-color: whitesmoke;
+  }
+
+  #smartphone-home-button {
+    background-color: whitesmoke;
+    border-color: #d2d2d2;
+  }
+
+  #smartphone-toolbar a {
+    color: #ececec;
+  }
+
+  #smartphone-toolbar:hover a {
+    color: #bdbdbd;
+  }
+
+  #smartphone-toolbar {
+  }
+
+  .smartphone-toolbar-item {
+  }
+
+  #smartphone-toolbar-close {
+    visibility: hidden
+  }
+
+  #smartphone-toolbar-resize {
+  }
+
+  #smartphone-screen {
+    background-color: whitesmoke;
+    border: none;
+  }
+
+  .sim-hype-container {
+    border: 2px solid silver;
+  }
+
+}
+
+

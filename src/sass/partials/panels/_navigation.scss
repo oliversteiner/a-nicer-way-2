@@ -1,0 +1,37 @@
+#nicer-panel-navigation {
+  left: 100px;
+  top: 100px;
+}
+
+#navigation-content {
+  padding: 15px;
+
+}
+
+#navigation-content {
+
+  font-size: 1em;
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    border-bottom: 1px solid #4c4c4c;
+  }
+
+  // links
+  a {
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  a:hover {
+    color: white;
+    background-color: #3a3a3a;
+  }
+}

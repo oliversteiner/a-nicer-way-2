@@ -1,0 +1,2162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>A Nicer Way</title>
+    <link rel="stylesheet" href="libraries/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icon/favicon-16x16.png">
+    <link rel="manifest" href="/images/icon/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google Font Muli-->
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+</head>
+<body class="">
+<nav class="navbar navbar-default navbar-nicer" id="main_navigation">
+    <!-- inject:views/main_navigation.html -->
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header ">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">A Nicer Way</a>
+        <div class="visible-xs">
+            <ul class="nav  navbar-right">
+                <nav aria-label="">
+                    <ul class="pager">
+                        <li class="previous"><a class="navigation-button-previous"><span
+                                aria-hidden="true">&larr;</span> </a></li>
+                        <li class="next"><a class="navigation-button-next"> <span aria-hidden="true">&rarr;</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse   navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav  navbar-nav">
+            <li><a class="nicer-panel-navigation-toggle-button">Stationen</a></li>
+            <li><a class="data-display-toggle-button">Bearbeiten</a></li>
+            <li><a class="smartphone-sim-button-toggle"><span class="glyphicon glyphicon-phone"></span> </a></li>
+            <li><a class="console-toggle-button"><span class="glyphicon glyphicon-console"></span></a></li>
+            <li><a class="modal-center-button-remote"><span class="glyphicon glyphicon-sort"></span></a></li>
+            <li><a class="help-button-toggle " data-toggle="modal" data-target="#help-modal"><span class="glyphicon glyphicon-question-sign"></span></a></li>
+            <li><a class="nicer-panel-character-toggle-button"><span class="glyphicon glyphicon-knight"></span></a></li>
+            <li><a class="tumbnails-area-toggle-button-2">Editor</a></li>
+        </ul>
+
+        <ul class="nav  navbar-right">
+            <nav aria-label="">
+                <ul class="pager">
+                    <li class="previous"><a class="navigation-button-previous"><span aria-hidden="true">&larr;</span>
+                    </a></li>
+                    <li class="next"><a class="navigation-button-next"> <span aria-hidden="true">&rarr;</span></a></li>
+                </ul>
+            </nav>
+        </ul>
+
+
+    </div><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid -->
+    <!-- endinject -->
+</nav>
+<header>
+
+</header>
+<main>
+
+    <div id="timeway-container">
+        <!-- inject:views/timeway.html -->
+        <div id="timeway-content">
+    <div id="layer-1-himmel" class="ost-parallax"></div>
+    <div id="layer-2-berge" class="ost-parallax"></div>
+    <div id="layer-3-aktuell" class="ost-parallax">
+
+    </div>
+    <div id="layer-character">
+
+    </div>
+
+    <div id="layer-schmuck" class="ost-parallax">
+
+
+        <div class="schmuck schmuck-denkmal-vadian"></div>
+        <div class="schmuck schmuck-brunnen"></div>
+        <div class="schmuck schmuck-parkbank"></div>
+
+    </div>
+
+</div>
+        <!-- endinject -->
+    </div>
+
+    <div id="status-display-container">
+        <!-- inject:views/status_display.html -->
+        <div id="status-display-content">
+    <div class="status-display-navbar">
+<!--        <div class="status-display-elem" id="status-display-feeling" >Feeling</div>
+        <div class="status-display-elem" id="status-display-date" >Datum</div>-->
+        <div class="status-display-elem" id="status-display-place" >Ort</div>
+        <div class="status-display-elem smartphone-sim-button-toggle" >
+            <span id="status-display-smartphone"></span>
+        </div>
+
+    </div>
+</div>
+<div id="status-display-ready"></div>
+        <!-- endinject -->
+    </div>
+
+    <div id="smartphone-sim-container">
+        <!-- inject:views/smartphone_sim.html -->
+        <div id="smartphone-sim-content">
+    <div id="smartphone-frame" class="shadow-display">
+        <div id="smartphone-inner">
+            <div id="smartphone-head">
+
+                <!-- Toolbar -->
+                <div id="smartphone-toolbar">
+
+                    <!-- resize -->
+                    <div id="smartphone-toolbar-resize"
+                         class="smartphone-toolbar-item smartphone-toolbar-item-group">
+                        <a id="smartphone-toolbar-smaler">
+                            <span class="glyphicon glyphicon-minus-sign"></span>
+                        </a>
+                        <a id="smartphone-toolbar-bigger">
+                            <span class="glyphicon glyphicon-plus-sign"></span>
+                        </a>
+                    </div>
+
+                    <!-- solo-presentations-modus -->
+                    <div class="smartphone-toolbar-item">
+                        <a id="smartphone-toolbar-solo">solo</a>
+                    </div>
+
+                    <!-- close -->
+                    <div class="smartphone-toolbar-item">
+                        <a id="smartphone-toolbar-close">×</a>
+                    </div>
+
+                </div>
+            </div>
+            <div id="smartphone-screen">
+                <div id="smartphone-screen-ring">
+
+                    <div id="smartphone-content">
+
+                        <!-- Start Hype -->
+
+                        <div id="nicerv5_hype_container" class="sim-hype-container">
+                            <script type="text/javascript" charset="utf-8" src="hype/NICER_v5.hyperesources/nicerv5_hype_generated_script.js?85057"></script>
+                        </div>
+
+
+                        <!-- End Hype -->
+
+                    </div>
+                    <div id="smartphone-console">
+                        <div id="smartphone-console-toolbar">
+
+                            <!-- Status -->
+                            <div class="smartphone-console-toolbar-item smartphone-console-status"
+                                 id="smartphone-console-toolbar-status">console
+                            </div>
+
+                            <!-- test -->
+                            <div class="smartphone-console-toolbar-item" id="smartphone-console-toolbar-test">
+                                <a class="smartphone-console-test">[test]</a>
+                            </div>
+
+                            <!-- clear -->
+                            <div class="smartphone-console-toolbar-item" id="smartphone-console-toolbar-clear">
+                                <a class="smartphone-console-clear">[clear]</a>
+                            </div>
+
+                        </div>
+
+                        <div id="smartphone-console-main">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="smartphone-home-button"></div>
+        <div id="smartphone-sim-ready"></div>
+    </div>
+</div>
+        <!-- endinject -->
+    </div>
+
+
+    <div id="data-display-container">
+        <!-- inject:views/data_display.html -->
+        <div id="data-display-content"  class="nicer-display" >
+    <div class="well well-display shadow-display">
+
+        <!-- header -->
+        <div class="display-header">
+
+        <span class="display-title">
+            <span class="glyphicon glyphicon-pencil glyphicon-title"></span>
+            Daten bearbeiten
+            </span>
+         <span class="close display-close-button">&times;</span>
+
+        </div>
+
+        <!-- Main -->
+        <div class="display-main">
+
+        <p id="twp-data-info_id"></p>
+
+        <form id="data-display-form" class="form-horizontal">
+
+            <!-- _id -->
+            <input type="hidden" class="form-control" name="_id" id="twp-data-id">
+
+
+            <!--sequence-->
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="twp-data-sequence">Seq</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="sequence" id="twp-data-sequence"
+                           placeholder="sequence">
+                </div>
+
+            </div>
+
+
+            <!--Time-->
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="twp-data-time">Time</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="Time" id="twp-data-time" placeholder="Time">
+                </div>
+            </div>
+
+
+            <!--Date-->
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="twp-data-date">Date</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="Date" id="twp-data-date" placeholder="Date">
+                </div>
+            </div>
+
+
+            <!--Place-->
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="twp-data-place">Place</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="Place" id="twp-data-place" placeholder="Place">
+                </div>
+            </div>
+
+
+            <!--Feeling-->
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="twp-data-feeling">Feeling</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="Feeling" id="twp-data-feeling" placeholder="Feeling">
+                </div>
+            </div>
+
+
+            <!--Message-->
+            <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="twp-data-message">Message</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" name="Message" id="twp-data-message" placeholder="Message">
+                </div>
+            </div>
+
+
+            <!--Notice-->
+            <div class="form-group form-group-sm">
+
+                <label class="col-sm-2 control-label" for="twp-data-notice">Notice</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" rows="3" name="Notice" id="twp-data-notice">TEST</textarea>
+                </div>
+
+            </div>
+            <div class="btn-group btn-sm" role="group" aria-label="...">
+
+                <button type="button" id="data-display-button-save" class="btn btn-success btn-sm">
+                    <span class="glyphicon glyphicon-save-file" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" id="data-display-button-new" class="btn btn-default  btn-sm">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" id="data-display-button-delete" class="btn btn-sm btn-danger">
+                    <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                </button>
+
+                <button type="button" id="data-display-button" class="btn btn-sm btn-default">
+                    &nbsp;
+                </button>
+
+                <button type="button" id="data-display-button-erase-db" class="btn btn-sm btn-default">
+                    E
+                </button>
+
+                <button type="button" id="data-display-button-load-default" class="btn btn-sm btn-default">
+                    L
+                </button>
+            </div>
+        </form>
+        </div>
+
+        <!-- Footer -->
+        <div class="display-footer"></div>
+
+    </div>
+</div>
+        <!-- endinject -->
+    </div>
+
+    <div id="remote-display-container">
+        <!-- inject:views/remote_display.html -->
+        <div id="remote-display-content" data-keystroke="" class="nicer-display">
+
+    <div class="well well-display shadow-display">
+
+        <!-- Header -->
+        <div class="display-header">
+            <span class="display-title"><span
+                    class="glyphicon glyphicon-sort glyphicon-title"> </span> Remote</span>
+
+            <span class="close display-close-button">&times;</span>
+        </div>
+
+        <!-- Main -->
+        <div class="display-main">
+            <div id="remote-display-frame">
+                <!-- inject:views/remote_display_mobile.html -->
+                <div id="remote-display-mobile-effect"></div>
+
+<div id="remote-display-mobile-content" class="container-fluid">
+
+
+    <!-- LIST -->
+    <div id="remote-list-header">A Nicer Way</div>
+
+    <div id="remote-list-wrapper" class="slide-wrapper slide-up">
+
+        <div id="remote-list-main"></div>
+
+    </div>
+    <div class="well well-remote">
+        <button type="button" class="btn  btn-block btn-default remote-open-list-button">
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </button>
+    </div>
+
+
+    <!-- Timer -->
+    <div id="remote-timer" class=" flip-container">
+
+        <div class=" anw-timer flipper">
+
+            <!-- anw-timer-lite -->
+            <div class="anw-timer-lite  center-block text-center flip-front">
+                <div class="well well-remote">
+
+                    <div class="row">
+
+                        <div class="col-xs-6 col-lg-6 col-md-6 col-sm-6">
+
+                            <!-- Preview -->
+                            <div class="">
+
+                                <div id="remote-slide-preview" class="center-block text-center"></div>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-lg-6 col-md-6 col-sm-6">
+                            <div class=" timer-flip-button">
+
+                                <!-- display -->
+                                <span class="timer-number timer-number-lite"></span>
+                                <span>
+                                    <span class="timer-indicator"></span>
+                                    <span class="timer-unit timer-unit-lite">min</span>
+                                </span>
+
+                            </div> <!-- well-remote -->
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- anw-timer-full -->
+            <div class="anw-timer-full center-block text-center flip-back">
+                <div class="well well-nicer well-nicer-light">
+
+                    <span class="close anw-timer-full-close-button">&times;</span>
+
+                    <div class="timer-display">
+                        <span class="timer-number timer-number-full"></span>
+
+                        <span>
+                        <span class="timer-indicator"></span>
+                        <span class="timer-unit">min</span>
+                    </span>
+                    </div>
+
+                    <!-- timer-display-input -->
+                    <div class="timer-display-input" style="display: none">
+                        <input type="number" pattern="\d*" min="0" max="99" step="1" value=""
+                               class="timer-number-input"> <span class="timer-unit">min</span>
+                    </div>
+
+                    <div class="timer-controlls">
+
+                        <!-- start -->
+                        <div class="btn btn-lg btn-nicer timer-start-button">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </div>
+
+                        <!-- pause -->
+                        <div class="btn  btn-lg btn-nicer timer-pause-button" style="display: none">
+                            <span class="glyphicon glyphicon-pause"></span>
+                        </div>
+
+                        <!-- stop  -->
+                        <div class="btn btn-nicer timer-stop-button">
+                            <span class="glyphicon glyphicon-stop"></span>
+                        </div>
+
+                        <!-- settings -->
+                        <div class="btn btn-nicer timer-settings-button" style="display: none">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </div>
+                    </div>
+
+                    <div class="timer-settings">
+
+                        <div class="btn-group">
+
+                            <!-- - -->
+                            <button type="button" class="btn btn-default timer-settime-button" data-timer-set="-">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                            <!-- 5 -->
+                            <button type="button" class="btn btn-default timer-settime-button" data-timer-set="10">5
+                            </button>
+                            <!-- 10 -->
+                            <button type="button" class="btn btn-default timer-settime-button" data-timer-set="10">
+                                10
+                            </button>
+                            <!-- 20 -->
+                            <button type="button" class="btn btn-default timer-settime-button" data-timer-set="20">
+                                20
+                            </button>
+                            <!-- 30 -->
+                            <button type="button" class="btn btn-default timer-settime-button" data-timer-set="30">
+                                30
+                            </button>
+                            <!-- + -->
+                            <button type="button" class="btn btn-default timer-settime-button" data-timer-set="+">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div> <!-- Timer full-->
+
+        </div>
+
+    </div>
+
+    <!-- Toolbar -->
+
+    <div id="mobile-toolbar" class="well well-remote center-block text-center flip-container">
+
+        <div class="flipper">
+
+            <!-- Tools -->
+            <div class=" flip-front">
+                <div class="btn-group btn-group-inline">
+
+                    <!-- navigation-display-toggle -->
+                    <button type="button"
+                            data-command="navigation-display-toggle"
+                            class="navigation-display-toggle-button
+          socket-cmd-button
+          btn btn-default btn-sm ">Nav
+                    </button>
+
+                    <!-- data-display-toggle -->
+                    <button type="button"
+                            data-command="data-display-toggle"
+                            class="data-display-toggle-button
+          socket-cmd-button
+          btn btn-default btn-sm">Data
+                    </button>
+
+                    <!-- smartphone-sim-toggle -->
+                    <button type="button"
+                            data-command="smartphone-sim-toggle"
+                            class="smartphone-sim-toggle-button
+          socket-cmd-button
+          btn btn-default btn-sm ">
+                        <span class="glyphicon glyphicon-phone"></span>
+                    </button>
+
+                    <!-- console -->
+                    <button type="button"
+                            data-command="console-toggle"
+                            class="console-button-toggle
+          socket-cmd-button
+          console-toggle
+          btn btn-default btn-sm ">
+                        <span class="glyphicon glyphicon-console"></span>
+                    </button>
+
+                    <!-- remote-toggle -->
+                    <button type="button"
+                            data-command="remote-toggle"
+                            class="remote-toggle-button
+          socket-cmd-button
+          btn btn-default btn-sm ">
+                        <span class="glyphicon glyphicon-sort"></span>
+                    </button>
+
+                    <!-- help-button-toggle -->
+                    <button type="button"
+                            data-command="help-toggle"
+                            class="help-toggle-button
+          socket-cmd-button
+          btn btn-default btn-sm ">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                    </button>
+
+                </div>
+
+                <!-- txt -->
+                <button type="button"
+                        class="txt-open-button btn btn-nicer-transparent btn-sm ">
+                    txt
+                </button>
+
+            </div>
+
+            <!-- Message -->
+            <div class=" flip-back">
+                <div class="message-input">
+                    <form class="form-inline form-small" name="sockettest">
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="input-socket-message" placeholder="bla bla">
+                            <span class="input-group-addon btn-nicer socket-message-button">send</span>
+                            <span class="input-group-addon btn-nicer txt-close-button socket-cmd-button" data-command="dont-talk">&times;</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Protagonist -->
+    <div id="remote-character" class="well well-remote center-block text-center flip-container">
+        <!-- Main -->
+
+        <div class="flipper">
+
+            <!-- Tools -->
+            <div class=" flip-front">
+
+                <div class="well well-nicer-light">
+                    <div id="remote-character-navigation"></div>
+
+                </div>
+
+            </div>
+
+            <!-- Action -->
+            <div class="flip-back">
+
+                <div class="well well-nicer-light" id="remote-character-action-navigation">
+                    <div class="btn-group btn-group-inline">
+
+                        <button
+                                class="socket-cmd-button btn btn-default btn-sm"
+                                data-command="action-hide">
+                            <span class="glyphicon glyphicon-eye-close"></span>
+                        </button>
+                        <button
+
+                                class="socket-cmd-button btn btn-default btn-sm"
+                                data-command="action-walk">gehen
+                        </button>
+                        <button
+
+                                class="socket-cmd-button btn btn-default btn-sm"
+                                data-command="action-wink">winken
+                        </button>
+                        <button
+
+                                class="socket-cmd-button btn btn-default btn-sm"
+                                data-command="action-wait">warten
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-nicer-transparent btn-sm remote-character-toggle-button"><span
+                            class="glyphicon glyphicon-option-vertical"></span></button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Vor und Zurück -->
+    <div class="well well-remote">
+
+        <div class="row">
+            <div class="col-xs-6">
+                <button type="button" data-command="previous"
+                        class=" btn btn-default btn-block socket-cmd-button socket-button-previous">
+                    <div class="slide-number slide-number-previous">0</div>
+                    <div class="slide-arrow"><span class="glyphicon glyphicon-chevron-left"></span></div>
+
+                </button>
+            </div>
+
+            <div class="col-xs-6">
+                <button type="button" data-command="next"
+                        class=" btn btn-default btn-block socket-cmd-button socket-button-next">
+
+                    <div class="slide-number slide-number-next">2</div>
+
+                    <div class="slide-arrow"><span class="glyphicon glyphicon-chevron-right"></span></div>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Ping -->
+    <div class="well well-remote">
+        <button type="button" class="btn  btn-block btn-default socket-ping-button">
+            <span class="glyphicon glyphicon-screenshot"></span>
+        </button>
+    </div>
+
+
+</div>
+
+                <!-- endinject -->
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="display-footer"></div>
+    </div>
+</div>
+        <!-- endinject -->
+    </div>
+
+
+    <div id="help-container">
+        <!-- inject:views/help.html -->
+        <div class="help-content">
+    <!-- Modal -->
+    <div class="modal" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="vertical-alignment-helper">
+            <div class="modal-dialog vertical-align-center">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">A Niver Way <span class="version"></span></h4>
+                        </div>
+                        <div class="modal-body">
+
+                            <h4>Tastaturkürzel:</h4>
+                            <div class="spalten">
+
+
+                                <table class="help-keystroke">
+                                    <tr>
+                                        <th>s</th>
+                                        <td>Simulator</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>h</th>
+                                        <td>Diese Hilfe</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>n</th>
+                                        <td>Navigation</td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+
+
+                                <table class="help-keystroke">
+                                    <tr>
+                                        <th><span class="glyphicon glyphicon-arrow-left"></span></th>
+                                        <td>vorheriger Zeitpunkt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="glyphicon glyphicon-arrow-right"></span></th>
+                                        <td>nächster Zeitpunkt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="glyphicon glyphicon-arrow-up"></span></th>
+                                        <td>letzter Zeitpunkt</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th><span class="glyphicon glyphicon-arrow-down"></span></th>
+                                        <td>erster Zeitpunkt</td>
+                                        <td></td>
+                                    </tr>
+
+                                </table>
+
+
+                            </div>
+
+
+                            <p class="copywright">© Oliver Steiner | IMD 2017 | St. Gallen</p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="help-ready"></div>
+        <!-- endinject -->
+    </div>
+
+    <div id="modal-center-container">
+        <!-- inject:views/modal_center.html -->
+        <div id="modal-remote-center-content">
+
+    <div id="modal-center" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal-content -->
+
+                <!-- inline Remote ModusDemo ore open in new Window-->
+
+                <div id="remote-modal-how-open" style="display:none;">
+                    <div class="well well-transparent">
+                        <ul class="list-group">
+                            <li class="btn-nicer list-group-item remote-button-open-window">Remote in neuem Fenster
+                                öffnen
+                            </li>
+                            <li class="btn-nicer list-group-item remote-button-open-inline">Demo auf der aktuellen
+                                Seite
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- remote-modal-change-directly -->
+                <div id="remote-modal-change-directly" style="display:none;">
+                    <div class="well well-transparent">
+                        <!-- Change direct to Remote Modus-->
+                        <div class="btn-nicer-transparent-2">
+                            <a href="remote.html">
+                                <div class=" go-remote-contdown-number">
+                                    <span class="glyphicon glyphicon-sort "></span>
+                                </div>
+                                <div><h4>zu Remote-Modus wechseln?</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--INIT DB Frage-->
+                <div id="init-DB-message-wrapper" style="display:none;">
+                    <div class="well well-transparent">
+
+                        <div class="init-DB-message">
+                            <h4>Noch keine Einträge vorhanden.</h4>
+                            <button type="button" class="btn btn-default btn-block btn-nicer" data-dismiss="modal">
+                                Ohne Inhalte fortfahren
+                            </button>
+                            <button type="button" class="btn  btn-block btn-success" onclick="_reset()">
+                                Beispiel laden
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--NIT DB  Processbar-->
+                <div id="init-DB-progress-wrapper" style="display: none">
+                    <div class="well well-transparent">
+                        <div class="progress ">
+                            <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                 aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- /.modal-content -->
+            </div>
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+</div>
+        <!-- endinject -->
+    </div>
+
+
+
+
+
+</main>
+
+<div id="editor" style="display: none">
+    <!-- inject:views/editor/editor.html -->
+    <div id="editor-toolbar-side-container">
+    <!-- inject:views/editor/editor_toolbar_side.html -->
+    <div id="editor-toolbar-side-content" class="shadow-display">
+
+    <div id="toolbar-buttons">
+
+        <!-- text -->
+        <div class="side-toolbar-button"><span class="editor-button-35x40 side-toolbar-text-button"></span></div>
+
+        <!-- Shape -->
+        <div class="side-toolbar-button"><span class="editor-button-35x40 side-toolbar-shape-button"></span></div>
+
+        <!-- image file -->
+        <div class="side-toolbar-button"><span class="editor-button-35x40 side-toolbar-image_file-button"></span></div>
+
+        <!-- code -->
+        <div class="side-toolbar-button"><span class="editor-button-35x40 side-toolbar-code-button"></span></div>
+
+        <!-- active zone -->
+        <div class="side-toolbar-button"><span class="editor-button-35x40 side-toolbar-active-zone-button"></span></div>
+
+        <!-- Seperator -->
+        <div class="side-toolbar-button"><span class="side-toolbar-item side-toolbar-seperator"></span></div>
+
+        <!-- character -->
+        <div class="side-toolbar-button"><span class="editor-button-35x40 side-toolbar-character-button"></span></div>
+
+    </div>
+
+</div>
+
+    <!-- endinject -->
+</div>
+
+
+<div id="editor-toolbar-top-container">
+    <!-- inject:views/editor/editor_toolbar_top.html -->
+    
+
+<div id="editor-toolbar-top-content">
+
+    <!-- tumbnails-area close -->
+    <div id="slide-tumbnails-area-close">
+        <span class="editor-button-20 triangle-close tumbnails-area-toggle-button"></span>
+<!--
+        <span class="editor-button-20x45 editor-area-switcher-big"></span>
+-->
+    </div>
+
+    <!-- tumbnails-area -->
+    <div id="slide-tumbnails-area" class="shadow-display" style="display: none">
+
+        <div id="slide-list-container">
+            <ul class="slide-list">
+                <li>
+                    <div class="slide-list-wrapper" data-slide="slide-1">
+
+                        <div class="slide-list-tumbnail"></div>
+                        <div class="slide-list-number">1</div>
+                        <div class="slide-list-title">Slide 1</div>
+                        <div class="slide-list-transition">
+                            <div class="editor-button slide-list-transition-button"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="slide-list-wrapper slide-active" data-slide="slide-2">
+
+                        <div class="slide-list-tumbnail"></div>
+                        <div class="slide-list-number">2</div>
+                        <div class="slide-list-title">Slide 2</div>
+                        <div class="slide-list-transition">
+                            <div class="editor-button slide-list-transition-button"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="slide-list-wrapper" data-slide="slide-3">
+
+                        <div class="slide-list-tumbnail"></div>
+                        <div class="slide-list-number">3</div>
+                        <div class="slide-list-title">Slide 3</div>
+                        <div class="slide-list-transition">
+                            <div class="editor-button slide-list-transition-button"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="slide-list-wrapper" data-slide="slide-4">
+
+                        <div class="slide-list-tumbnail"></div>
+                        <div class="slide-list-number">4</div>
+                        <div class="slide-list-title">Slide 4</div>
+                        <div class="slide-list-transition">
+                            <div class="editor-button-20 slide-list-add-new-button"></div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li>
+                    <div class="slide-list-wrapper" data-slide="slide-1">
+
+                        <div class="slide-list-tumbnail"></div>
+                        <div class="slide-list-number">1</div>
+                        <div class="slide-list-title">Slide 1</div>
+                        <div class="slide-list-transition">
+                            <div class="editor-button slide-list-transition-button"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="slide-list-wrapper" data-slide="slide-2">
+
+                        <div class="slide-list-tumbnail"></div>
+                        <div class="slide-list-number">2</div>
+                        <div class="slide-list-title">Slide 2</div>
+                        <div class="slide-list-transition">
+                            <div class="editor-button slide-list-transition-button"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="slide-list-wrapper" data-slide="slide-3">
+
+                        <div class="slide-list-tumbnail"></div>
+                        <div class="slide-list-number">3</div>
+                        <div class="slide-list-title">Slide 3</div>
+                        <div class="slide-list-transition">
+                            <div class="editor-button slide-list-transition-button"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="slide-list-wrapper" data-slide="slide-4">
+
+                        <div class="slide-list-tumbnail"></div>
+                        <div class="slide-list-number">4</div>
+                        <div class="slide-list-title">Slide 4</div>
+                        <div class="slide-list-transition">
+                            <div class="editor-button-20 slide-list-add-new-button"></div>
+                        </div>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+</div>
+    <!-- endinject -->
+</div>
+
+
+<div id="editor-view-container">
+    <!-- inject:views/editor/editor_view.html -->
+    
+    <!-- endinject -->
+</div>
+
+    <!-- endinject -->
+</div>
+
+
+
+
+
+<footer>
+    <div id="console-container">
+        <!-- inject:views/console.html -->
+        <div id="console-content">
+
+    <div id="console-toolbar">
+        <div class="console-toolbar-item console-status"
+             id="console-toolbar-status">console
+        </div>
+        <div class="console-toolbar-item" id="console-toolbar-test"><a
+                class="console-test">[test]</a></div>
+        <div class="console-toolbar-item" id="console-toolbar-clear"><a
+                class="console-clear">[clear]</a></div>
+
+    </div>
+    <div id="console-main">
+
+    </div>
+
+</div>
+<div class="console-ready"></div>
+        <!-- endinject -->
+    </div>
+
+</footer>
+
+
+<div id="panels">
+
+    <div id="panel-details-container">
+        <!-- inject-panel:panels/panel_details.html -->
+        <!-- Nicer Panel -->
+<div id="nicer-panel-details"
+     class="nicer-panel"
+     data-keystroke="d"
+     data-nicer-panel="details">
+
+    <!-- Panel Header -->
+    <div class="nicer-panel-header">
+        <!-- Title -->
+        <div class="nicer-panel-title">
+            <span class="glyphicon glyphicon-pencil"></span>
+            Details
+        </div>
+
+        <!-- Close -->
+        <div class="nicer-panel-close-button">
+            <span class="picto-panel picto-close"></span>
+        </div>
+
+    </div>
+    <!-- Main -->
+    <div class="nicer-panel-main">
+
+        <!-- Section 1 -->
+        <section class="nicer-panel-section" data-panel-section="details-section-1">
+
+
+            <!-- Title -->
+            <div class="nicer-panel-section-header">
+                <div class="nicer-panel-section-title">
+
+                    <!--Slide Number -->
+                    <div id="detail-slide-number">99</div>
+
+                    <!-- Slide Title -->
+                    <div id="detail-slide-name" class="nicer-panel-col-right"><h2>Slide 2</h2></div>
+                </div>
+
+            </div>
+
+
+            <!-- Panel Section Main -->
+            <div class="nicer-panel-section-main">
+                <!-- Background -->
+                <div class="nicer-panel-row">
+                    <label for="detail-slide-background">Hintergrund</label>
+                    <div id="detail-slide-background">
+                        <div class="input-group input-group-nicer">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-nicer-color-picker"></button>
+                            </div>
+
+                            <input name="detail-slide-background" class="form-control" aria-label="">
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Grösse -->
+                <div class="nicer-panel-row">
+                    <label for="detail-slide-width">Breite</label>
+                    <div id="detail-slide-width">
+                        <div class="input-group input-group-nicer">
+                            <input name="detail-slide-width" type="text" class="form-control" aria-label="...">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+
+                <!-- übergang -->
+
+                <div class="nicer-panel-row">
+
+                    <label for="slide-detail-transition">Übergang</label>
+
+                    <div class="btn-group btn-group-xs nicer-panel-col-right" role="group">
+
+                        <button type="button"
+                                id="slide-detail-transition"
+                                class="btn btn-default btn-nicer-panel-100 dropdown-toggle"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                            normal
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">slide in</a></li>
+                            <li><a href="#">slide left</a></li>
+                            <li><a href="#">flip</a></li>
+                            <li><a href="#">Erscheinen</a></li>
+                        </ul>
+                    </div><!-- /btn-group -->
+
+                </div>
+
+                <!--  ID -->
+                <div class="nicer-panel-row">
+                    <label for="detail-slide-id"></label>
+                    <div id="detail-slide-id" class="nicer-panel-col-right">timewaypoint-2-dkfjfurzh</div>
+                </div>
+                <!-- Panel Section Footer -->
+                <div class="nicer-panel-section-footer"></div>
+            </div>
+
+        </section>
+
+
+        <!-- Panel Section -->
+        <section class="nicer-panel-section" data-panel-section="details-section-2">
+            <!-- Panel Section Header -->
+
+            <!-- Title -->
+            <div class="nicer-panel-section-header">
+                <div class="nicer-panel-section-title">
+                    User Journey
+                </div>
+
+                <!-- options -->
+                <div class="nicer-panel-option-button">
+                    <span class="picto-panel picto-options"></span>
+                </div>
+            </div>
+
+
+            <!-- Panel Section Main -->
+            <div class="nicer-panel-section-main">
+
+                <!-- Panel Section Options -->
+                <div class="nicer-panel-section-options" style="display: none">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="blankCheckbox1" value="option1" aria-label="...">
+                            </label>
+                            Checkbox Option
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="blankCheckbox2" value="option1" aria-label="...">
+                            </label>
+                            Checkbox Option
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="blankCheckbox3" value="option1" aria-label="...">
+                            </label>
+                            Checkbox Option
+                        </div>
+
+                    </div>
+
+            <!-- Zeit / Datum -->
+
+
+            <div class="nicer-panel-row">
+
+                <label for="slide-detail-city">Datum / Zeit</label>
+
+                <div class="input-group input-group-nicer">
+                    <input id="slide-detail-city-input" name="slide-detail-city" type="text" class="form-control"
+                           aria-label="...">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+            </div>
+
+            <!-- Ort -->
+            <div class="nicer-panel-row">
+
+                <label for="slide-detail-place">Ort</label>
+
+                <div class="input-group input-group-nicer">
+                    <input id="slide-detail-place" name="slide-detail-place" type="text" class="form-control"
+                           aria-label="...">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+            </div>
+
+            <!-- Stadt -->
+
+            <div class="nicer-panel-row">
+
+                <label for="slide-detail-city">Stadt</label>
+
+                <div class="input-group input-group-nicer">
+                    <input id="slide-detail-city" name="slide-detail-city" type="text" class="form-control"
+                           aria-label="...">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false"><span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+            </div>
+
+            <!-- Feeling -->
+            <div class="nicer-panel-row">
+
+                <label for="slide-detail-feeling">Feeling</label>
+                <div class="btn-group btn-group-xs nicer-panel-col-right" role="group">
+
+                    <button type="button"
+                            id="slide-detail-feeling"
+                            class="btn btn-default btn-nicer-panel-100 dropdown-toggle"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false">
+                        Neutral
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Gut</a></li>
+                        <li><a href="#">Neutral</a></li>
+                        <li><a href="#">Schlecht</a></li>
+                    </ul>
+                </div><!-- /btn-group -->
+            </div>
+
+    </div>
+    <!-- Panel Section Footer -->
+    <div class="nicer-panel-section-footer"></div>
+    </section>
+
+
+    <!-- Panel  Section with Tabs -->
+    <section class="nicer-panel-section" data-panel-section="details-section-3">
+
+        <!-- Panel Section Header -->
+        <div class="nicer-panel-section-header">
+
+            <!-- options -->
+            <div class="nicer-panel-tab-option-button">
+                <span class="picto-panel picto-options"></span>
+            </div>
+
+            <!-- Nav -->
+            <div class="nicer-panel-section-title">
+                <ul class="nav nav-pills" role="tablist">
+                    <li role="presentation" class="active">
+                        <a href="#tab-screens" role="tab" data-toggle="tab">Screens</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="#tab-hype" role="tab" data-toggle="tab">Hype</a></li>
+                    <li role="presentation">
+                        <a href="#tab-datenbank" role="tab" data-toggle="tab">Datenbank</a>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <!-- Panel Section Main -->
+        <div class="nicer-panel-section-main">
+
+            <!-- Panel Section Options -->
+            <div class="nicer-panel-section-options">
+                <!-- Device -->
+
+                <div class="nicer-panel-row">
+
+                    <label for="slide-detail-screens-device">Device</label>
+
+                    <div class="btn-group btn-group-xs nicer-panel-col-right" role="group">
+
+                        <button type="button"
+                                id="slide-detail-screens-device"
+                                class="btn btn-default btn-nicer-panel-100 dropdown-toggle"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                            iPhone 6
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">iPhone 6</a></li>
+                            <li><a href="#">iPad Mini</a></li>
+                            <li><a href="#">iPad</a></li>
+                            <li><a href="#">iPad Pro</a></li>
+                            <li><a href="#">Desktop</a></li>
+                        </ul>
+                    </div><!-- /btn-group -->
+                </div>
+
+
+            </div>
+
+
+            <div class="tab-content">
+
+                <!--Tab Tab-Screen-->
+                <div role="tabpanel" class="tab-pane active" id="tab-screens">
+
+                    <!-- Screens -->
+
+
+                    <!-- Background -->
+                    <div class="nicer-panel-row">
+                        <label for="slide-details-background-screens">Hintergrund</label>
+                        <div id="slide-details-background-screens">
+                            <div class="input-group input-group-nicer">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-nicer-color-picker"></button>
+                                </div>
+
+                                <input class="form-control" name="slide-details-background-screens" aria-label="">
+
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false"><span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="#">bild</a></li>
+                                        <li><a href="#">nichts</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- übergang -->
+
+                    <div class="nicer-panel-row">
+
+                        <label for="slide-detail-screens-transition">Übergang</label>
+
+                        <div class="btn-group btn-group-xs nicer-panel-col-right" role="group">
+
+                            <button type="button"
+                                    id="slide-detail-screens-transition"
+                                    class="btn btn-default btn-nicer-panel-100 dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                normal
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">slide in</a></li>
+                                <li><a href="#">slide left</a></li>
+                                <li><a href="#">flip</a></li>
+                                <li><a href="#">Erscheinen</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div>
+
+                    <!-- Figur -->
+                    <div class="nicer-panel-row">
+
+                        <label for="detail-slide-character">Figur</label>
+
+                        <div class="btn-group btn-group-xs nicer-panel-col-right"
+                             role="group">
+
+                            <!-- Character -->
+
+                            <span id="detail-slide-character">
+                                        <button id="detail-slide-character-button"
+                                                type="button"
+                                                class="btn btn-default btn-xs dropdown-toggle btn-nicer-panel-66"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            Person
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Person</a></li>
+                                            <li><a href="#">Bus</a></li>
+                                            <li><a href="#">Gruppe</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">neu...</a></li>
+                                        </ul>
+                                </span>
+
+                            <!-- Character Action-->
+                            <span id="detail-slide-character-action">
+
+                                    <!-- /btn-group -->
+                                    <button id="detail-slide-character-action-button"
+                                            class="btn btn-default btn-xs dropdown-toggle btn-nicer-panel-33"
+                                            type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">
+                                        Laufen
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Laufen</a></li>
+                                        <li><a href="#">Winken</a></li>
+                                        <li><a href="#">Warten</a></li>
+                                    </ul>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tab Tab-HYPE-->
+                <div role="tabpanel" class="tab-pane" id="tab-hype">
+
+
+                    <!-- scene -->
+                    <div class="nicer-panel-row">
+
+                        <label for="slide-detail-hype-screne">Scene</label>
+
+                        <div class="btn-group btn-group-xs nicer-panel-col-right" role="group">
+
+                            <button type="button"
+                                    id="slide-detail-hype-screne"
+                                    class="btn btn-default btn-nicer-panel-100 dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                Scene 1
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Scene 1</a></li>
+                                <li><a href="#">Scene 2</a></li>
+                                <li><a href="#">Scene 3</a></li>
+                                <li><a href="#">Scene 4</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+                    </div>
+
+                    <!-- übergang -->
+                    <div class="nicer-panel-row">
+
+                        <label for="slide-detail-hype-transition">Übergang</label>
+
+                        <div class="btn-group btn-group-xs nicer-panel-col-right" role="group">
+
+                            <button type="button"
+                                    id="slide-detail-hype-transition"
+                                    class="btn btn-default btn-nicer-panel-100 dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false">
+                                normal
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">slide in</a></li>
+                                <li><a href="#">slide left</a></li>
+                                <li><a href="#">flip</a></li>
+                                <li><a href="#">Erscheinen</a></li>
+                            </ul>
+                        </div><!-- /btn-group -->
+
+                    </div>
+
+                    <!-- timeline -->
+                    <div class="nicer-panel-row">
+
+                        <label for="detail-slide-hype-timeline">Timeline</label>
+
+                        <div class="btn-group btn-group-xs nicer-panel-col-right"
+                             role="group">
+
+                            <!-- Character -->
+
+                            <span id="detail-slide-hype-timeline">
+                                        <button id="detail-slide-hype-timeline-button"
+                                                type="button"
+                                                class="btn btn-default btn-xs dropdown-toggle btn-nicer-panel-66"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            Hauptzeitlinie
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Hauptzeitlinie</a></li>
+                                            <li><a href="#">...</a></li>
+                                            <li><a href="#">...</a></li>
+                                        </ul>
+                                </span>
+
+                            <!-- Character Action-->
+                            <span id="detail-slide-hype-timeline-action">
+
+                                    <!-- /btn-group -->
+                                    <button id="detail-slide-hype-timeline-action-button"
+                                            class="btn btn-default btn-xs dropdown-toggle btn-nicer-panel-33"
+                                            type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">
+                                        Start
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Start</a></li>
+                                        <li><a href="#">Stop</a></li>
+                                        <li><a href="#">goTo..</a></li>
+                                    </ul>
+                                </span>
+                        </div>
+                    </div>
+
+                    <!-- spezial -->
+                    <div class="nicer-panel-row">
+
+                        <label for="slide-detail-hype-special">Stadt</label>
+
+                        <div class="input-group input-group-nicer">
+                            <input id="slide-detail-hype-special"
+                                   name="slide-detail-hype-special"
+                                   type="text"
+                                   class="form-control"
+                                   aria-label="...">
+
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false"><span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div><!-- /btn-group -->
+                        </div><!-- /input-group -->
+                    </div>
+
+                    <!-- hr -->
+                    <hr class="nicer-panel-seperator"/>
+
+                    <!-- hintergrund -->
+                    <div class="nicer-panel-row">
+                        <label for="slide-details-background-hype-screens">Hintergrund</label>
+                        <div id="slide-details-background-hype-screens">
+                            <div class="input-group input-group-nicer">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default btn-nicer-color-picker"></button>
+                                </div>
+
+                                <input class="form-control" name="slide-details-background-screens" aria-label="">
+
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default dropdown-toggle"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false"><span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="#">bild</a></li>
+                                        <li><a href="#">nichts</a></li>
+                                    </ul>
+                                </div><!-- /btn-group -->
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- figur -->
+                    <div class="nicer-panel-row">
+
+                        <label for="detail-slide-hype-character">Figur</label>
+
+                        <div class="btn-group btn-group-xs nicer-panel-col-right"
+                             role="group">
+
+                            <!-- Character -->
+
+                            <span id="detail-slide-hype-character">
+                                        <button id="detail-slide-hype-character-button"
+                                                type="button"
+                                                class="btn btn-default btn-xs dropdown-toggle btn-nicer-panel-66"
+                                                data-toggle="dropdown"
+                                                aria-haspopup="true" aria-expanded="false">
+                                            Person
+                                        </button>
+
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Person</a></li>
+                                            <li><a href="#">Bus</a></li>
+                                            <li><a href="#">Gruppe</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li><a href="#">neu...</a></li>
+                                        </ul>
+                                </span>
+
+                            <!-- Character Action-->
+                            <span id="detail-slide-hype-character-action">
+
+                                    <!-- /btn-group -->
+                                    <button id="detail-slide-hype-character-action-button"
+                                            class="btn btn-default btn-xs dropdown-toggle btn-nicer-panel-33"
+                                            type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">
+                                        Laufen
+                                    </button>
+
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Laufen</a></li>
+                                        <li><a href="#">Winken</a></li>
+                                        <li><a href="#">Warten</a></li>
+                                    </ul>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Tab Tab-Database-->
+                <div role="tabpanel" class="tab-pane" id="tab-datenbank">
+
+                    <!-- Delete Slide -->
+                    <div class="nicer-panel-row">
+                        <div class="nicer-panel-col-right">
+
+                            <button type="button"
+                                    id="data-display-button-delete"
+                                    class="btn btn-xs btn-nicer-panel-100 btn-danger nicer-panel-col-right">
+
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+
+                                Slide löschen
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Empty Database -->
+                    <div class="nicer-panel-row">
+                        <div class="nicer-panel-col-right">
+
+                            <button type="button"
+                                    id="data-display-button-erase-db"
+                                    class="btn btn-xs btn-nicer-panel-100 btn-danger nicer-panel-col-right">
+                                Datenbank leeren
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <!-- Fill with Default-->
+                    <div class="nicer-panel-row">
+                        <div class="nicer-panel-col-right">
+                            <button type="button"
+                                    id="data-display-button-load-default"
+                                    class="btn btn-xs btn-nicer-panel-100 btn-default ">
+                                Musterdaten füllen
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- tab-content -->
+
+        </div>
+
+    </section>
+
+</div>
+<!-- Panel Section Footer -->
+<div class="nicer-panel-section-footer"></div>
+</div>
+        <!-- endinject -->
+    </div>
+
+    <div id="panel-blank-container">
+        <!-- inject-panel:panels/panel_blank.html -->
+        
+<!-- Nicer Panel -->
+<div id="nicer-panel-blank"
+     class="nicer-panel"
+     data-keystroke="x"
+     data-nicer-panel="blank">
+
+    <!-- Panel Header -->
+    <div class="nicer-panel-header">
+        <!-- Title -->
+        <div class="nicer-panel-title">
+            <span class="glyphicon glyphicon-asterisk"></span>
+            Untitled
+        </div>
+
+        <!-- Close -->
+        <div class="nicer-panel-close-button">
+            <span class="picto-panel picto-close"></span>
+        </div>
+
+    </div>
+    <!-- Main -->
+    <div class="nicer-panel-main">
+
+
+        <!-- Panel Section -->
+        <section class="nicer-panel-section" data-panel-section="blank-section-1">
+
+            <!-- Panel Section Header -->
+            <div class="nicer-panel-section-header">
+
+                <!-- Title -->
+                <div class="nicer-panel-section-title">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    Section-1
+                </div>
+
+                <!-- Options -->
+                <div class="nicer-panel-option-button">
+                    <span class="picto-panel picto-options"></span>
+                </div>
+
+            </div>
+
+            <!-- Panel Section Main -->
+            <div class="nicer-panel-section-main">
+                <ul>
+                    <li>
+                        <p>listeneintrag</p>
+                    </li>
+                    <li>
+                        <p>listeneintrag</p>
+                    </li>
+                    <li>
+                        <p>listeneintrag</p>
+                    </li>
+                    <li>
+                        <p>listeneintrag</p>
+                    </li>
+                    <li>
+                        <p>listeneintrag</p>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Panel Section Footer -->
+            <div class="nicer-panel-section-footer"></div>
+        </section>
+
+
+        <!-- Panel Section -->
+        <section class="nicer-panel-section" data-panel-section="blank-section-2">
+            <!-- Panel Section Header -->
+
+            <!-- Title -->
+            <div class="nicer-panel-section-header">
+                <div class="nicer-panel-section-title">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    Section-2
+                </div>
+
+                <!-- options -->
+                <div class="nicer-panel-option-button">
+                    <span class="picto-panel picto-options"></span>
+                </div>
+            </div>
+
+            <!-- Panel Section Main -->
+            <div class="nicer-panel-section-main">
+                <p>Rerum reprehenderit quos dolores.
+                    Nisi sunt veniam ut illum animi
+                    vitae provident et. Corrupti vitae
+                    laborum rerum dignissimos nulla blanditiis
+                    ipsam voluptatem. Voluptatem magni enim
+                    nihil autem debitis
+                    eveniet.</p>
+
+                <hr class="nicer-panel-seperator"/>
+
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                </ul>
+
+            </div>
+            <!-- Panel Section Footer -->
+            <div class="nicer-panel-section-footer"></div>
+        </section>
+
+
+        <!-- Panel  Section with Tabs -->
+        <section class="nicer-panel-section" data-panel-section="blank-section-3">
+
+            <!-- Panel Section Header -->
+            <div class="nicer-panel-section-header">
+
+                <!-- Nav -->
+                <div class="nicer-panel-section-title">
+                    <ul class="nav nav-pills" role="tablist">
+                        <li role="presentation" class="active"><a href="#start" role="tab" data-toggle="tab">Start</a></li>
+                        <li role="presentation"><a href="#profil" role="tab" data-toggle="tab">Profil</a></li>
+                        <li role="presentation"><a href="#nachrichten" role="tab" data-toggle="tab">Nachrichten</a>
+                    </ul>
+                </div>
+
+                <!-- options -->
+                <div class="nicer-panel-option-button">
+                    <span class="picto-panel picto-options"></span>
+                </div>
+
+            </div>
+
+            <!-- Panel Section Main -->
+            <div class="nicer-panel-section-main">
+
+                <div class="tab-content">
+
+                    <!--Tab Tab-1-->
+                    <div role="tabpanel" class="tab-pane active" id="start">
+
+                        <p>Rerum reprehenderit quos dolores.
+                            Nisi sunt veniam ut illum animi
+                            vitae provident et. Corrupti vitae
+                            laborum rerum dignissimos nulla blanditiis
+                            ipsam voluptatem. Voluptatem magni enim
+                            nihil autem debitis
+                            eveniet.</p>
+
+                        <hr class="nicer-panel-seperator"/>
+
+                        <ul>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                        </ul>
+
+                    </div>
+
+                    <!--Tab Tab-2-->
+                    <div role="tabpanel" class="tab-pane active" id="profil">
+                        <p>Corrupti vitae
+                            laborum rerum dignissimos nulla blanditiis
+                            ipsam voluptatem. Voluptatem magni enim
+                            nihil autem debitis
+                            eveniet.</p>
+                    </div>
+
+                    <!--Tab Tab-3-->
+                    <div role="tabpanel" class="tab-pane active" id="nachrichten">
+                        <p>Voluptatem magni enim
+                            nihil autem debitis
+                            eveniet.</p>
+                        <ul>
+                            <li><a href="#">Link 1</a></li>
+                            <li><a href="#">Link 2</a></li>
+                        </ul>
+
+                        <p>Corrupti vitae
+                            laborum rerum dignissimos nulla blanditiis
+                            ipsam voluptatem. Voluptatem magni enim
+                            nihil autem debitis
+                            eveniet.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    <!-- Panel Section Footer -->
+    <div class="nicer-panel-section-footer"></div>
+</div>
+        <!-- endinject -->
+    </div>
+
+    <div id="panel-navigation-container">
+        <!-- inject-panel:panels/panel_navigation.html -->
+        <div id="nicer-panel-navigation"
+     data-keystroke="n"
+     class="nicer-panel"
+     data-nicer-panel="navigation">
+
+    <!-- Header -->
+    <div class="nicer-panel-header">
+
+        <!-- Titel -->
+        <div class="nicer-panel-title">
+            <span class="glyphicon glyphicon-th-list glyphicon-title"></span>
+            Stationen
+        </div>
+
+        <!-- Close -->
+        <div class="nicer-panel-close-button">
+            <span class="picto-panel picto-close"></span>
+        </div>
+
+    </div>
+
+    <!-- Main -->
+    <div class="nicer-panel-main">
+
+        <!-- Panel Section -->
+        <section class="nicer-panel-section">
+
+            <div id="navigation-content">
+                laden ...
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div class="nicer-panel-footer"></div>
+</div>
+        <!-- endinject -->
+    </div>
+
+    <div id="panel-character-container">
+        <!-- inject-panel:panels/panel_character.html -->
+        <div id="nicer-panel-character"
+     data-keystroke="p"
+     class="nicer-panel"
+     data-nicer-panel="character">
+
+
+
+<!-- Header -->
+    <div class="nicer-panel-header">
+
+        <!-- Titel -->
+        <div class="nicer-panel-title">
+            <span class="glyphicon glyphicon-knight glyphicon-title"> </span>
+            Charakter
+        </div>
+
+        <!-- Close -->
+        <div class="nicer-panel-close-button">
+            <span class="picto-panel picto-close"></span>
+        </div>
+
+    </div>
+
+
+    <!-- Main -->
+    <div class="nicer-panel-main flip-container">
+
+        <div class="flipper">
+
+            <!-- Tools -->
+            <div class=" flip-front">
+
+                <div class="well well-nicer-light">
+                    <div id="character-navigation"></div>
+                </div>
+
+            </div>
+
+            <!-- Action -->
+            <div class="flip-back">
+
+                <div class="well well-nicer-light" id="character-action-navigation">
+                    <div class="btn-group btn-group-inline">
+
+                        <button
+                                class="character-action-button btn btn-default btn-sm"
+                                data-character-action="hide">
+                            <span class="glyphicon glyphicon-eye-close"></span>
+                        </button>
+                        <button
+
+                                class="character-action-button btn btn-default btn-sm"
+                                data-character-action="walk">gehen
+                        </button>
+                        <button
+
+                                class="character-action-button btn btn-default btn-sm"
+                                data-character-action="wink">winken
+                        </button>
+                        <button
+
+                                class="character-action-button btn btn-default btn-sm"
+                                data-character-action="wait">warten
+                        </button>
+
+                    </div>
+
+                    <button class="btn btn-nicer-transparent btn-sm flip-toggle-button"><span
+                            class="glyphicon glyphicon-option-vertical"></span></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="nicer-panel-footer"></div>
+</div>
+        <!-- endinject -->
+    </div>
+
+</div>
+
+
+
+<div id="blackout"></div>
+
+
+
+
+
+
+<!-- Libraries -->
+<script src="libraries/jquery/jquery-3.2.1.min.js"></script>
+<script src="libraries/bootstrap/bootstrap.min.js"></script>
+<script src="libraries/jquery/jquery-ui/jquery-ui.min.js"></script>
+<script src="libraries/pouchdb/pouchdb-6.2.0.min.js"></script>
+<script src="libraries/jquery/jquery.scrollTo.min.js"></script>
+<script src="libraries/keymaster/keymaster.js"></script>
+
+<!-- socket -->
+<script src="/socket.io/socket.io.js"></script>
+
+
+
+<!-- inject:js -->
+<script src="js/ANicerWay.js"></script>
+<script src="js/main.js"></script>
+<script src="js/test.js"></script>
+<script src="js/utilities.js"></script>
+<script src="js/controllers/CharacterController.js"></script>
+<script src="js/controllers/ConsoleController.js"></script>
+<script src="js/controllers/DataDisplayController.js"></script>
+<script src="js/controllers/DisplayController.js"></script>
+<script src="js/controllers/HelpController.js"></script>
+<script src="js/controllers/NavigationController.js"></script>
+<script src="js/controllers/PanelController.js"></script>
+<script src="js/controllers/RemoteDisplayController.js"></script>
+<script src="js/controllers/SmartphoneSimController.js"></script>
+<script src="js/controllers/StatusDisplayController.js"></script>
+<script src="js/controllers/TimeWayController.js"></script>
+<script src="js/controllers/TimerController.js"></script>
+<script src="js/editor/editor.js"></script>
+<script src="js/services/HypeService.js"></script>
+<script src="js/services/PouchDBService.js"></script>
+<script src="js/services/SocketIOService.js"></script>
+<script src="js/services/SocketSimulatorService.js"></script>
+<script src="js/editor/controllers/EditorDevicesController.js"></script>
+<script src="js/editor/controllers/EditorSlidesController.js"></script>
+<script src="js/editor/controllers/EditorSlidesDetailsController.js"></script>
+<script src="js/editor/controllers/EditorToolbarSideController.js"></script>
+<script src="js/editor/services/DataTreeService.js"></script>
+<!-- endinject -->
+
+
+
+
+<script>
+/*    $(function () {
+        $('[data-toggle="popover"]').popover()
+    })*/
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+@import "../design/colors";
+@import "../design/fonts";
+
+// Default Nicer
+.btn-nicer {
+  background-color: $color-button;
+  cursor: pointer;
+}
+
+.btn-nicer:hover {
+  background-color: $color-button-hover;
+  color: $color-text-link;
+}
+
+.btn-nicer:active {
+  background-color: $color-button-active;
+}
+
+// Big
+.btn-nicer-big {
+  background-color: $color-button;
+  cursor: pointer;
+  color: $color-console-background-bright;
+
+}
+
+.btn-nicer-big:hover {
+  background-color: $color-button-hover;
+  color: $color-text-link;
+  border: solid 1px $color-console-background-bright;
+
+}
+
+.btn-nicer-big:active {
+  background-color: $color-button-active;
+  border: solid 1px $color-console-background-bright;
+
+}
+
+// transpatent
+.btn-nicer-transparent {
+  cursor: pointer;
+  color: $color-display-text;
+  background-color: $color-display-background;
+
+}
+
+.btn-nicer-transparent:hover {
+  color: $color-text-link;
+
+}
+
+.btn-nicer-transparent:active {
+
+}
+
+.btn-nicer-transparent a {
+  text-decoration: none;
+}
+
+// transpatent 2
+.btn-nicer-transparent-2 {
+  cursor: pointer;
+  color: $color-console-background-bright;
+  border: solid 1px $color-black;
+  border-radius: 15px;
+  padding: 20px;
+
+}
+
+.btn-nicer-transparent-2:hover {
+  color: $color-text-link;
+  border: solid 1px $color-console-background-bright;
+
+}
+
+.btn-nicer-transparent-2:active {
+  border: solid 1px $color-console-background-bright;
+
+}
+
+.btn-nicer-transparent-2 a {
+  text-decoration: none;
+}
+
+.btn-group-inline {
+  display: inline;
+}
+
+.btn-nicer-color-picker {
+  width: 23px;
+  height: 23px;
+
+  background: #96C1F3;
+  border: 1px solid #19051F;
+  box-shadow: inset -1px -1px 3px 1px rgba(0, 0, 0, 0.50);
+  border-radius: 3px;
+}

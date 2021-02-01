@@ -1,0 +1,30 @@
+@import "../design/colors";
+@import "../design/fonts";
+
+@import "remote_mobile";
+
+#remote-display-content {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  display: block;
+}
+
+#remote-display-frame {
+  display: block;
+  position: relative;
+  width: 375px;
+}
+
+
+// Modal abfrage
+#remote-modal-change-directly {
+position: relative;
+  padding: 20px;
+}
+
+
+#remote-display-content .display-main{
+  height: 630px;
+  background-color: #282828;
+}

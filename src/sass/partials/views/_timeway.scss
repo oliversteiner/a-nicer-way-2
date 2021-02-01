@@ -1,0 +1,297 @@
+   @import "../design/colors";
+@import "../design/fonts";
+
+$color-timeway-ebene-viewport: rgb(164, 213, 237);
+
+$width-max: 16000px;
+
+#timeway {
+  height: 600px;
+  overflow: hidden;
+}
+
+#timeway.debug-modus {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: $color-message;
+}
+
+#timeway-content {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 600px;
+
+}
+
+#layer-1-himmel {
+  background: url("../images/papier/papierhintergrund.jpg");
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 4000px;
+
+  width: $width-max;
+  height: 600px;
+}
+
+
+#layer-2-berge {
+  // background: url("../images/timeway/ANW_Berge.png");
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 4000px;
+
+  width: $width-max;
+  height: 600px;
+}
+
+#layer-3-aktuell {
+
+  width: $width-max;
+  height: 600px;
+}
+
+#layer-4-baume {
+  pointer-events: none;
+
+  width: $width-max;
+  height: 600px;
+}
+
+.timewaypoint {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  width: 1000px;
+  height: 600px;
+  //  border: 1px solid green;
+
+}
+
+
+
+.parallax-front,
+.parallax-back{
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  pointer-events: none;
+  display: inline-block;
+  background-size: contain;
+  width: 1000px;
+  height: 600px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+
+.parallax-front{
+  bottom: -80px;
+  z-index: +10;
+}
+
+
+
+
+.ost-parallax {
+  left: 1px;
+  top: 0;
+  height: 600px;
+  position: absolute;
+
+}
+
+// Bäume:
+
+.baum-1 {
+  // background: url("../images/timeway/ANW_Baum_1.png");
+}
+
+.baum-2 {
+  // background: url("../images/timeway/ANW_Baum_2.png");
+}
+
+.baum-3 {
+  // background: url("../images/timeway/ANW_Baum_3.png");
+}
+
+.busch-1 {
+  // background: url("../images/timeway/ANW_Busch_1.png");
+}
+
+.busch-2 {
+  //  background: url("../images/timeway/ANW_Busch_2.png");
+}
+
+.deko {
+  pointer-events: none;
+
+  display: inline-block;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 300px;
+
+  width: 300px;
+  height: 600px;
+}
+
+.kurz {
+  margin-right: 300px;
+}
+
+.breit {
+  margin-right: 500px;
+}
+
+.timewaypoint-sequence-number {
+  margin-top: 20px;
+  margin-left: 100px;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.timewaypoint-titel {
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.timewaypoint-images {
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  width: 1000px;
+  background-size: contain;
+
+}
+
+// 1
+.schmuck-busstop {
+  background-image: url("../images/schmuck/schmuck-busstop.png");
+}
+
+// 2
+.haus-kevins-haus {
+  background-image: url("../images/haus/haus-kevins-haus.png");
+}
+
+// 4
+.haus-stadtbild-1 {
+  background-image: url("../images/haus/haus-stadtbild-1.png");
+  background-size: contain;
+}
+
+.haus-stadtbild-2 {
+  background-image: url("../images/haus/haus-stadtbild-2.png");
+  background-size: contain;
+}
+
+.haus-stadtbild-3 {
+  background-image: url("../images/haus/haus-stadtbild-3.png");
+  background-size: contain;
+}
+
+.haus-bushaltestelle {
+  background-image: url("../images/haus/haus-bushaltestelle.png");
+
+}
+
+.zimmer-kevins-schlafzimmer {
+  background-image: url("../images/zimmer/zimmer-kevins-schlafzimmer.png");
+}
+
+// 13
+.haus-schulhaus {
+  background-image: url("../images/haus/haus-schulhaus.png");
+
+}
+
+.zimmer-schulzimmer {
+  background-image: url("../images/zimmer/zimmer-schulzimmer.png");
+}
+
+// 10
+.zimmer-mensa {
+  background-image: url("../images/zimmer/zimmer-mensa.png");
+
+}
+
+// 8 + 11
+.haus-treppe {
+  background-image: url("../images/haus/haus-treppe.png");
+
+}
+
+// 12
+.zimmer-gruppenarbeit {
+  background-image: url("../images/zimmer/zimmer-gruppenarbeit.png");
+
+}
+
+// 13
+.haus-kornhaus {
+  background-image: url("../images/haus/haus-kornhaus.png");
+
+}
+
+// 14
+.schmuck-baerenplatz {
+  background-image: url("../images/schmuck/schmuck-baerenplatz.png");
+  background-size: contain;
+
+}
+
+#layer-schmuck {
+  position: relative;
+  height: 600px;
+  width: $width-max;
+  top: 100px;
+  left: 0;
+}
+
+// schmuck
+.schmuck {
+  position: absolute;
+  pointer-events: none;
+  display: inline-block;
+  margin-left: 60px;
+  background-size: cover;
+  height: 600px;
+  width: 300px;
+  background-position: bottom left;
+  background-repeat: no-repeat;
+
+}
+
+.schmuck-brunnen {
+  background-image: url("../images/schmuck/schmuck-brunnen-1.png");
+  margin-left: 3000px;
+  height: 600px;
+  width: 300px;
+
+}
+
+.schmuck-denkmal-vadian {
+  background-image: url("../images/schmuck/schmuck-denkmal-vadian.png");
+  margin-left: 5300px;
+  width: 400px;
+
+}
+
+.schmuck-parkbank {
+  background-image: url("../images/schmuck/schmuck-parkbank.png");
+  margin-left: 500px;
+  background-size: contain;
+  width: 400px;
+  margin-bottom: 50px;
+
+}
+
+.schmuck-strassenlaterne {
+  background-image: url("../images/schmuck/schmuck-strassenlaterne.png");
+  margin-left: 800px;
+
+  width: 50px;
+
+}
